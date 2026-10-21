@@ -1,0 +1,25 @@
+/*
+ * Design tokens — taken from the official Meesho DICE S3 template: deep plum (Meesho tile), orange, cream header
+ * band and the four-colour stripe (orange · magenta · cyan · coral). Status colours stay readable on white.
+ */
+:root {
+  --plum-950: #2e0626; --plum-900: #3d0a33; --plum-800: #560547; --plum-700: #6e1260; --plum-600: #8a2a7a;
+  --plum-200: #ead0e3; --plum-100: #f5e6f1; --plum-50: #fbf5f9;
+  --orange: #f79c21; --orange-600: #e8860b; --orange-700: #b86400; --orange-50: #fff4e3;
+  --cream: #fff3d7; --cream-50: #fffaf0;
+  --stripe-orange: #ffa53b; --stripe-magenta: #e45ce8; --stripe-cyan: #5fe1f2; --stripe-coral: #f4566c;
+  --stripes: linear-gradient(90deg, var(--stripe-orange) 0 25%, var(--stripe-magenta) 25% 50%, var(--stripe-cyan) 50% 75%, var(--stripe-coral) 75% 100%);
+
+  --green: #137a5c; --green-bg: #e3f3ed; --green-strong: #0f6a4f;
+  --amber: #9a5b00; --amber-bg: #fff1dc;
+  --red: #c72b42; --red-bg: #fce9ec;
+  --teal: #0e6b7d; --teal-bg: #e4f1f4;
+  --grey: #5f5463; --grey-bg: #efebef;
+
+  --bg: #faf6f1; --surface: #fff; --ink: #2b0d24; --muted: #6e6672; --border: #ece3e8; --border-strong: #dccbd6;
+  --radius: 14px; --radius-sm: 10px;
+  --shadow: 0 1px 2px rgba(61, 10, 51, .05), 0 2px 8px rgba(61, 10, 51, .04);
+  --shadow-lg: 0 12px 40px rgba(46, 6, 38, .22);
+  --sidebar-w: 248px; --topbar-h: 64px;
+  --font: 'Plus Jakarta Sans', 'Noto Sans Devanagari', 'Nirmala UI', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+}

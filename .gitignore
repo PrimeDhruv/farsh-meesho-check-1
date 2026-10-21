@@ -1,0 +1,37 @@
+# Dependencies (recreated by `npm install`)
+node_modules/
+
+# Build output (recreated by `npm run build`)
+dist/
+dist-ssr/
+*.local
+
+# Vite / tooling caches
+.vite/
+.cache/
+coverage/
+
+# Environment files (never commit secrets)
+.env
+.env.*
+!.env.example
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Editors
+.vscode/*
+!.vscode/extensions.json
+.idea/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
