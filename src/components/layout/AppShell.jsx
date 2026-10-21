@@ -1,6 +1,6 @@
 import { useState, useEffect, useMemo } from 'react';
 import { NavLink, Outlet, useLocation, Link } from 'react-router-dom';
-import { LayoutDashboard, Calculator, Package, Radar, Settings, Menu, Bell, FlaskConical, CheckCircle2, X, ChevronRight, Users, PackageX } from 'lucide-react';
+import { LayoutDashboard, Calculator, Package, Radar, Settings, Menu, Bell, FlaskConical, CheckCircle2, X, ChevronRight, Users, PackageX, Megaphone, Lightbulb } from 'lucide-react';
 import { BrandMark } from './Logo.jsx';
 import meeshoTile from '../../assets/meesho-tile.png';
 import { LanguagePicker } from './LanguagePicker.jsx';
@@ -14,7 +14,9 @@ import { countAlerts } from '../../engine/watchAll.js';
 const NAV = [
   { to: '/', key: 'nav.dashboard', icon: LayoutDashboard, end: true },
   { to: '/price-coach', key: 'nav.coach', icon: Calculator },
+  { to: '/ads', key: 'nav.ads', icon: Megaphone },
   { to: '/products', key: 'nav.products', icon: Package },
+  { to: '/launch', key: 'nav.launch', icon: Lightbulb },
   { to: '/competitors', key: 'nav.competitors', icon: Users },
   { to: '/returns', key: 'nav.returns', icon: PackageX },
   { to: '/watch', key: 'nav.watch', icon: Radar },

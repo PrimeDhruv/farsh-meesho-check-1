@@ -9,6 +9,8 @@ import Watch from './pages/Watch.jsx';
 import Competitors from './pages/Competitors.jsx';
 import Returns from './pages/Returns.jsx';
 import Settings from './pages/Settings.jsx';
+import AdsPlanner from './pages/AdsPlanner.jsx';
+import Launch from './pages/Launch.jsx';
 
 export default function App() {
   return (
@@ -19,7 +21,9 @@ export default function App() {
             <Route element={<AppShell />}>
               <Route index element={<Dashboard />} />
               <Route path="price-coach" element={<PriceCoach />} />
+              <Route path="ads" element={<AdsPlanner />} />
               <Route path="products" element={<Products />} />
+              <Route path="launch" element={<Launch />} />
               <Route path="competitors" element={<Competitors />} />
               <Route path="returns" element={<Returns />} />
               <Route path="watch" element={<Watch />} />

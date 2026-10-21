@@ -28,7 +28,7 @@ Hindi); you can change it later from the top bar or Settings. Stop the server wi
 ### 4. Other commands
 | Command | What it does |
 |---|---|
-| `npm test` | Runs the 110 engine tests (Node's built-in test runner, no browser needed) |
+| `npm test` | Runs the 130 engine tests (Node's built-in test runner, no browser needed) |
 | `npm run build` | Creates a production build in `dist/` |
 | `npm run preview` | Serves the `dist/` build locally to check it |
 
@@ -57,7 +57,17 @@ Vercel) or opened from a sub-folder.
 3. **Products:** every SKU with price, no-loss price, profit per order, busy range, data confidence and status.
 4. **Farsh Watch:** weekly alerts as what we noticed → likely reason → one thing to do → what it's worth (never a
    forced price), a WhatsApp preview, the festive stress test, and the five lifecycle stages.
-5. **Settings:** language, profile, alert channel, assumptions in plain words, reset demo data.
+5. **Ads Planner (new):** for any product and price, the monthly ads budget range that earns the most total profit
+   (the sweet spot), what it buys (views, clicks, orders, total profit a month), a chart of extra profit by budget with
+   too little / sweet spot / too much / losing money zones, the ad cost each order carries (no-loss price before and
+   with ads), and "price + ads together": e.g. kurti best without ads ₹389 (≈₹1,600 a month) vs ₹406 with ≈₹750 of
+   ads (≈₹2,050 a month). Model in `src/engine/ads.js`, assumptions in `src/data/ads.js`.
+6. **Launch Ideas (new):** for each of the seller's categories, launch ideas built from buyer searches as five
+   keywords (fabric · style · design · colour · price range) with searches, growth, competition, expected sales and
+   profit (same maths as Price Coach), and when to launch / how long / when to clear stock; a top-sellers board with
+   revenue per product and a "View product" window; a season planner. "Plan this launch" adds the product as a draft
+   and opens Price Coach or the Ads Planner. Model in `src/engine/launch.js`, data in `src/data/launch.js`.
+7. **Settings:** language, profile, alert channel, assumptions in plain words, reset demo data.
 
 Applying a fix or using a price updates the catalogue, so every screen shows the same numbers.
 

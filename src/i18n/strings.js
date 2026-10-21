@@ -400,5 +400,6 @@ const hi = {
 };
 
 import { en2, hi2 } from './strings.v2.js';
+import { en3, hi3 } from './strings.v3.js';
 
-export const STRINGS = { en: { ...en, ...en2 }, hi: { ...hi, ...hi2 } };
+export const STRINGS = { en: { ...en, ...en2, ...en3 }, hi: { ...hi, ...hi2, ...hi3 } };
